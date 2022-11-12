@@ -1,0 +1,19 @@
+﻿@model PasswordViewModel
+@{
+}
+<form method="post" action="GeneratePassword"> 
+    <div class="mb-3">
+         <label for="PasswordLength" class="form-label">Password Length</label>
+         <input type="number" class="form-control" name="PasswordLength" placeholder="Enter Password Length">
+    </div>
+    <div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+   
+</form>
+    <div class="text-center">
+        <h2>
+            @Model.PasswordResults
+        </h2>
+    </div>
+    
